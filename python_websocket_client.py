@@ -1,9 +1,8 @@
-
 # python -m pip install "python-socketio[client]" #
 
 import socketio
-sio = socketio.Client()
 
+sio = socketio.Client()
 
 
 def startclient(url, myroom, transport):
@@ -31,6 +30,7 @@ def startclient(url, myroom, transport):
     def disconnect():
         sio.disconnect()
         print("Disconnected!")
+
 
 def stopclient():
     sio.disconnect()
