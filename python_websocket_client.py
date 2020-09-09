@@ -28,10 +28,10 @@ def startclient(url, myroom, transport):
 
     @sio.on('disconnect')
     def disconnect():
-        sio.disconnect()
         print("Disconnected!")
+        sio.disconnect()
 
 
 def stopclient():
-    sio.disconnect()
     print("Disconnected!")
+    sio.disconnect()
